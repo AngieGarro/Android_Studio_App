@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Icono o imagen -->
+    <ImageView
+        android:id="@+id/iconSong"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/baseline_library_music_24" />
+
+    <!-- Contenedor para el título y la duración -->
+    <LinearLayout
+        android:id="@+id/titleDurationContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iconSong"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal">
+
+        <!-- Título de la canción -->
+        <TextView
+            android:id="@+id/ViewTitleSong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFBFB"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- Duración de la canción -->
+        <TextView
+            android:id="@+id/ViewDurationSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="#FFFBFB"
+            android:text=""
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!-- Nombre del artista -->
+    <TextView
+        android:id="@+id/ViewArtistNameSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleDurationContainer"
+        android:layout_toEndOf="@id/iconSong"
+        android:textColor="#FFFBFB"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Álbum -->
+    <TextView
+        android:id="@+id/ViewAlbumSongs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ViewArtistNameSongs"
+        android:layout_toEndOf="@id/iconSong"
+        android:textColor="#FFFBFB"
+        android:layout_marginStart="10dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btn_removeSong"
+        android:layout_marginTop="33dp"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="270dp"
+        android:text="X" />
+
+</RelativeLayout>
+
+

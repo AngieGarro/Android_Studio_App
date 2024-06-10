@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewEditPlaylistActivity"
+    android:background="@color/black">
+
+    <Button
+        android:id="@+id/btn_deletePlaylist"
+        android:layout_width="149dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="59dp"
+        android:text="Delete Playlist"
+        app:layout_constraintBottom_toTopOf="@+id/txt_playlistNameEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewName2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Editplaylist"
+        android:layout_width="82dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="89dp"
+        android:text="Edit"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/list_playlistSongs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_playlistNameEdit"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txt_playlistNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="Enter new name"
+        android:inputType="text"
+        android:textColor="#F8F3F3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Editplaylist"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="294dp"
+        android:text="@string/playlistName"
+        android:textColor="#C6B0B0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_playlistNameEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="43dp"
+        android:text="@string/playlistName"
+        android:textAlignment="center"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_playlistNameEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_addSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="24dp"
+        android:text="Add Song to Playlist"
+        app:layout_constraintBottom_toTopOf="@+id/list_allSongs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="171dp"
+        android:layout_marginBottom="6dp"
+        android:text="All Songs"
+        android:textColor="#FAF6F6"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_addSong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_playlistSongs" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_allSongs"
+        android:layout_width="385dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addSong" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="12dp"
+        android:text="Songs in Playlist"
+        android:textColor="#EDE9E9"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/list_playlistSongs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_playlistNameEdit" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_playlistSongs"
+        android:layout_width="396dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_addSong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

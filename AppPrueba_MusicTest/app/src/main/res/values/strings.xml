@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">AppPrueba_MusicTest</string>
+    <string name="title_Main">Music Test Project</string>
+    <string name="NameApp_Main">Music Test</string>
+    <string name="btnSong_Main">SONGS</string>
+    <string name="btnPlay_Main">MY PLAYLISTS</string>
+
+    <string name="title_playlist">Playlists</string>
+    <string name="btnAdd_Playlist">+ Add</string>
+    <string name="btn_backPlay"> > Back</string>
+    <string name="title_list_play">My Playlists</string>
+    <string name="playlistName">Name</string>
+    <string name="titleRegister_playlist">Add new Playlist</string>
+
+    <string name="btn_backSong"> > Back</string>
+    <string name="title_songs">Songs</string>
+
+    <string name="btn_backlist"> > Back</string>
+    <string name="playlist_listName">Playlist Name</string>
+    <string name="Playlist_Songs">Playlist Songs</string>
+</resources>
